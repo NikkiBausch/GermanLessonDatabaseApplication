@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a New Lesson</title>
+</head>
+<body>
+<h1>Add a New Lesson</h1>
+<form method="post" action="/lessons/addLesson">
+    Title of lesson:
+    <br>
+    <input type="text" name="lessonTitle">
+    <p>
+     Description of Lesson:
+        <br>
+    <input type="text" name="description">
+        <p>
+    Accompanying literature:
+    <br>
+    <input type="file" name="readingMaterials">
+    <p>
+    Worksheet:
+    <br>
+    <input type="file" name="worksheet">
+    <p>
+    Discussion Questions:
+    <br>
+    <input type="text" name="discussionQuestions">
+    <p>
+    <input type="submit" value="submit lesson plan">
+</form>
+
+</body>
+</html>

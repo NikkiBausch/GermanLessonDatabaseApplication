@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>German Lessons</title>
+</head>
+<body>
+
+<h1>All German Lessons</h1>
+<p th:unless="${lessons} and ${lessons.size()}">No Lessons yet!</p>
+
+<ul>
+    <th:block th:each="lesson : ${lessons}">
+        <li th:text="${lesson}"></li>
+    </th:block>
+</ul>
+
+</body>
+</html>
